@@ -147,7 +147,7 @@
         <div class="span3">
           <label>
             <h3><a href="./javascript.html#alerts">Alert提示信息</a></h3>
-            <p>Alert插件是一个实现了与提示信息基本相同功能的小插件。</p>
+            <p>Alert插件是一个给alerts提示信息增加关闭功能的小插件。</p>
           </label>
         </div>
         <div class="span3">
@@ -349,7 +349,7 @@ $('#myModal').modal({
              </tr>
              <tr>
                <td>shown</td>
-               <td>这个事件当modal显示时触发（将会等待css动画完成）。</td>
+               <td>这个事件当modal显示时触发（在css动画完成后）。</td>
              </tr>
              <tr>
                <td>hide</td>
@@ -357,7 +357,7 @@ $('#myModal').modal({
              </tr>
              <tr>
                <td>hidden</td>
-               <td>这个事件在modal被隐藏后触发。（将会等待css动画完成）。</td>
+               <td>这个事件在modal被隐藏后触发。（在css动画完成后）。</td>
              </tr>
             </tbody>
           </table>
@@ -919,17 +919,17 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
     ================================================== -->
     <section id="alerts">
       <div class="page-header">
-        <h1>Alert messages <small>bootstrap-alert.js</small></h1>
+        <h1>Alert提示信息 <small>bootstrap-alert.js</small></h1>
       </div>
       <div class="row">
         <div class="span3 columns">
-          <h3>About alerts</h3>
-          <p>The alert plugin is a tiny class for adding close functionality to alerts.</p>
-          <a href="assets/js/bootstrap-alert.js" target="_blank" class="btn">Download</a>
+          <h3>关于alerts</h3>
+          <p>Alert插件是一个给alerts提示信息增加关闭功能的小插件。</p>
+          <a href="assets/js/bootstrap-alert.js" target="_blank" class="btn">下载</a>
         </div>
         <div class="span9 columns">
-          <h2>Example alerts</h2>
-          <p>The alerts plugin works on regular alert messages, and block messages.</p>
+          <h2>Alerts示例</h2>
+          <p>Alerts插件可以用来关闭正常的提示信息，或者是区块信息。</p>
           <div class="alert fade in">
             <a class="close" data-dismiss="alert" href="#">&times;</a>
             <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
@@ -943,35 +943,35 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
             </p>
           </div>
           <hr>
-          <h2>Using bootstrap-alert.js</h2>
-          <p>Enable dismissal of an alert via javascript:</p>
+          <h2>使用 bootstrap-alert.js</h2>
+          <p>通过javascript来启用alert:</p>
           <pre class="prettyprint linenums">$(".alert").alert()</pre>
           <h3>Markup结构</h3>
-          <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
+          <p>只需要在关闭按钮上添加<code>data-dismiss="alert"</code>属性，按钮就可以自动实现alert提示信息的关闭功能。</p>
           <pre class="prettyprint linenums">&lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
           <h3>Methods方法</h3>
           <h4>$().alert()</h4>
-          <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+          <p>给所有包裹的alerts提示信息都增加了关闭功能。如果需要在关闭时增加淡入淡出效果，务必给alerts提示信息增加<code>.fade</code>和<code>.in</code>这两个class。</p>
           <h4>.alert('close')</h4>
-          <p>Closes an alert.</p>
+          <p>关闭alert.</p>
           <pre class="prettyprint linenums">$(".alert").alert('close')</pre>
           <h3>Events事件</h3>
-          <p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
+          <p>Bootstrap的alert类暴露了一些事件，以便于在操作alert时触发对应事件。</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 150px;">Event</th>
-               <th>Description</th>
+               <th style="width: 150px;">事件名称</th>
+               <th>描述</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>close</td>
-               <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+               <td>这个事件是当<code>close</code>方法被调用时就会触发。</td>
              </tr>
              <tr>
                <td>closed</td>
-               <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
+               <td>这个事件是当提示信息被关闭后就会触发。（在css动画完成后）</td>
              </tr>
             </tbody>
           </table>
@@ -994,12 +994,12 @@ $('#my-alert').bind('closed', function () {
       <div class="row">
         <div class="span3 columns">
           <h3>About</h3>
-          <p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+          <p>比普通的按钮更强大。可以控制按钮的状态，或者创建一组按钮用来创建类似工具栏的UI组件。</p>
           <a href="assets/js/bootstrap-button.js" target="_blank" class="btn">下载文件</a>
         </div>
         <div class="span9 columns">
-          <h2>Example uses</h2>
-          <p>Use the buttons plugin for states and toggles.</p>
+          <h2>使用示例</h2>
+          <p>使用buttons插件来控制按钮的状态和切换。</p>
           <table class="table table-bordered table-striped">
             <tbody>
              <tr>
@@ -1039,23 +1039,23 @@ $('#my-alert').bind('closed', function () {
             </tbody>
           </table>
           <hr>
-          <h2>Using bootstrap-button.js</h2>
-          <p>Enable buttons via javascript:</p>
+          <h2>使用 bootstrap-button.js</h2>
+          <p>通过javascript来启用buttons:</p>
           <pre class="prettyprint linenums">$('.tabs').button()</pre>
             <h3>Markup结构</h3>
-          <p>Data attributes are integral to the button plugin. Check out the example code below for the various markup types.</p>
+          <p>Data属性是button插件所必需设置的属性。查看下面不同类型的示例代码。</p>
 <pre class="prettyprint linenums">
-&lt;!-- Add data-toggle="button" to activate toggling on a single button --&gt;
+&lt;!-- 添加data-toggle="button"属性来激活单个按钮的切换 --&gt;
 &lt;button class="btn" data-toggle="button"&gt;Single Toggle&lt;/button&gt;
 
-&lt;!-- Add data-toggle="buttons-checkbox" for checkbox style toggling on btn-group --&gt;
+&lt;!-- 添加data-toggle="buttons-checkbox"属性来创建checkbox效果的按钮组 --&gt;
 &lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
   &lt;button class="btn"&gt;Left&lt;/button&gt;
   &lt;button class="btn"&gt;Middle&lt;/button&gt;
   &lt;button class="btn"&gt;Right&lt;/button&gt;
 &lt;/div&gt;
 
-&lt;!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group --&gt;
+&lt;!-- 添加data-toggle="buttons-radio"属性来创建radio效果的按钮组 --&gt;
 &lt;div class="btn-group" data-toggle="buttons-radio"&gt;
   &lt;button class="btn"&gt;Left&lt;/button&gt;
   &lt;button class="btn"&gt;Middle&lt;/button&gt;
@@ -1064,24 +1064,24 @@ $('#my-alert').bind('closed', function () {
 </pre>
           <h3>Methods方法</h3>
           <h4>$().button('toggle')</h4>
-          <p>Toggles push state. Gives the button the appearance that it has been activated.</p>
+          <p>切换按钮状态，显示按钮激活后的样式。</p>
           <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
+            <strong>注意！</strong>
+            你可以启用按钮的自动切换效果，在按钮上添加<code>data-toggle</code>属性即可。
           </div>
           <pre class="prettyprint linenums">&lt;button class="btn" data-toggle="button" &gt;…&lt;/button&gt;</pre>
           <h4>$().button('loading')</h4>
-          <p>Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
+          <p>设置按钮的状态为loading状态 - 禁用button并同时将按钮文字修改为loading文字。Loading文字可以通过button元素的<code>data-loading-text</code>属性来设置。
           </p>
           <pre class="prettyprint linenums">&lt;button class="btn" data-loading-text="loading stuff..." &gt;...&lt;/button&gt;</pre>
           <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            <a href="https://github.com/twitter/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
+            <strong>注意！</strong>
+            <a href="https://github.com/twitter/bootstrap/issues/793">Firefox在页面加载时会保持disbaled的状态</a>. 一种解决方案是使用<code>autocomplete="off"</code>.
           </div>
           <h4>$().button('reset')</h4>
-          <p>Resets button state - swaps text to original text.</p>
+          <p>重置按钮状态 - 将按钮文字修改为原来的文字。</p>
           <h4>$().button(string)</h4>
-          <p>Resets button state - swaps text to any data defined text state.</p>
+          <p>重置按钮状态 - 将按钮文字修改为定义的data属性文本内容。</p>
 <pre class="prettyprint linenums">&lt;button class="btn" data-complete-text="finished!" &gt;...&lt;/button&gt;
 &lt;script&gt;
   $('.btn').button('complete')
