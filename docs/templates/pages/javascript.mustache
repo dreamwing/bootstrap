@@ -16,7 +16,7 @@
             <li><a href="#buttons">{{_i}}Button{{/i}}</a></li>
             <li><a href="#collapse">{{_i}}Collapse折叠效果{{/i}}</a></li>
             <li><a href="#carousel">{{_i}}Carousel{{/i}}</a></li>
-            <li><a href="#typeahead">{{_i}}Typeahead输入建议效果{{/i}}</a></li>
+            <li><a href="#typeahead">{{_i}}Typeahead自动补全效果{{/i}}</a></li>
           </ul>
         </div>
       </header>
@@ -96,8 +96,8 @@
         </div>
         <div class="span3">
           <label>
-            <h3><a href="./javascript.html#typeahead">{{_i}}Typeahead输入建议效果{{/i}}</a></h3>
-            <p>{{_i}}这是一个可以使用任何表单元素快速创建优雅的输入建议效果的插件，插件很简洁，也很容易扩展。{{/i}}</p>
+            <h3><a href="./javascript.html#typeahead">{{_i}}Typeahead自动补全效果{{/i}}</a></h3>
+            <p>{{_i}}这是一个可以使用任何表单元素快速创建优雅的自动补全效果的插件，插件使用很简单，也很容易扩展。{{/i}}</p>
           </label>
         </div>
         <div class="span3">
@@ -1020,17 +1020,17 @@ $('#my-alert').bind('closed', function () {
     ================================================== -->
     <section id="collapse">
       <div class="page-header">
-        <h1>{{_i}}Collapse{{/i}} <small>bootstrap-collapse.js</small></h1>
+        <h1>{{_i}}Collapse折叠效果{{/i}} <small>bootstrap-collapse.js</small></h1>
       </div>
       <div class="row">
         <div class="span3 columns">
-          <h3>{{_i}}About{{/i}}</h3>
-          <p>{{_i}}Get base styles and flexible support for collapsible components like accordions and navigation.{{/i}}</p>
+          <h3>{{_i}}关于{{/i}}</h3>
+          <p>{{_i}}用来创建基本的折叠样式，并可灵活的设置各种如手风琴、导航等折叠组件效果。{{/i}}</p>
           <a href="assets/js/bootstrap-collapse.js" target="_blank" class="btn">{{_i}}下载文件{{/i}}</a>
         </div>
         <div class="span9 columns">
-          <h2>{{_i}}Example accordion{{/i}}</h2>
-          <p>{{_i}}Using the collapse plugin, we built a simple accordion style widget:{{/i}}</p>
+          <h2>{{_i}}Accordion手风琴效果示例{{/i}}</h2>
+          <p>{{_i}}使用collapse插件，实现一个简单的accordion风格的组件:{{/i}}</p>
 
           <div class="accordion" id="accordion2">
             <div class="accordion-group">
@@ -1073,17 +1073,17 @@ $('#my-alert').bind('closed', function () {
 
 
           <hr>
-          <h2>{{_i}}Using bootstrap-collapse.js{{/i}}</h2>
-          <p>{{_i}}Enable via javascript:{{/i}}</p>
+          <h2>{{_i}}使用 bootstrap-collapse.js{{/i}}</h2>
+          <p>{{_i}}通过javascript启用:{{/i}}</p>
           <pre class="prettyprint linenums">$(".collapse").collapse()</pre>
           <h3>{{_i}}Options{{/i}}</h3>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">{{_i}}Name{{/i}}</th>
-               <th style="width: 50px;">{{_i}}type{{/i}}</th>
-               <th style="width: 50px;">{{_i}}default{{/i}}</th>
-               <th>{{_i}}description{{/i}}</th>
+               <th style="width: 100px;">{{_i}}名称{{/i}}</th>
+               <th style="width: 50px;">{{_i}}类型{{/i}}</th>
+               <th style="width: 50px;">{{_i}}默认值{{/i}}</th>
+               <th>{{_i}}描述{{/i}}</th>
              </tr>
             </thead>
             <tbody>
@@ -1091,18 +1091,18 @@ $('#my-alert').bind('closed', function () {
                <td>{{_i}}parent{{/i}}</td>
                <td>{{_i}}selector{{/i}}</td>
                <td>false</td>
-               <td>{{_i}}If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior){{/i}}</td>
+               <td>{{_i}}如果有设置这个selector的话，那么当可折叠的项目显示时，在这指定parent下的所有可折叠的项目都会隐藏。(与传统的accordion效果类似){{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}toggle{{/i}}</td>
                <td>{{_i}}boolean{{/i}}</td>
                <td>true</td>
-               <td>{{_i}}Toggles the collapsible element on invocation{{/i}}</td>
+               <td>{{_i}}调用时切换折叠元素{{/i}}</td>
              </tr>
             </tbody>
           </table>
           <h3>{{_i}}Markup结构{{/i}}</h3>
-          <p>{{_i}}Just add <code>data-toggle="collapse"</code> and a <code>data-target</code> to element to automatically assign control of a collapsible element. The <code>data-target</code> attribute accepts a css selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you'd like it to default open, add the additional class <code>in</code>.{{/i}}</p>
+          <p>{{_i}}只需要在元素上添加<code>data-toggle="collapse"</code>和<code>data-target</code>来自动分配指定的折叠元素。<code>data-target</code>属性接受一个css选择器用来指定应用折叠效果的元素。 务必确认给折叠的元素添加class <code>collapse</code>。如果你想设置为默认打开，可以添加额外的class <code>in</code>.{{/i}}</p>
           <pre class="prettyprint linenums">
 &lt;button class="btn btn-danger" data-toggle="collapse" data-target="#demo"&gt;
   {{_i}}simple collapsible{{/i}}
@@ -1110,51 +1110,51 @@ $('#my-alert').bind('closed', function () {
 
 &lt;div id="demo" class="collapse in"&gt; … &lt;/div&gt;</pre>
           <div class="alert alert-info">
-            <strong>{{_i}}Heads up!{{/i}}</strong>
-            {{_i}}To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent="#selector"</code>. Refer to the demo to see this in action.{{/i}}
+            <strong>{{_i}}注意！{{/i}}</strong>
+            {{_i}}如果要在控制折叠效果的元素上增加如手风琴效果的一组元素的话，请添加data属性<code>data-parent="#selector"</code>。具体可以查看示例中的效果。{{/i}}
           </div>
           <h3>{{_i}}Methods方法{{/i}}</h3>
           <h4>.collapse({{_i}}options{{/i}})</h4>
-          <p>{{_i}}Activates your content as a collapsible element. Accepts an optional options <code>object</code>.{{/i}}
+          <p>{{_i}}使得内容作为一个可折叠的元素。接受可选的参数options <code>object</code>.{{/i}}
 <pre class="prettyprint linenums">
 $('#myCollapsible').collapse({
   toggle: false
 })</pre>
           <h4>.collapse('toggle')</h4>
-          <p>{{_i}}Toggles a collapsible element to shown or hidden.{{/i}}</p>
+          <p>{{_i}}切换显示或隐藏折叠元素。{{/i}}</p>
           <h4>.collapse('show')</h4>
-          <p>{{_i}}Shows a collapsible element.{{/i}}</p>
+          <p>{{_i}}显示折叠元素。{{/i}}</p>
           <h4>.collapse('hide')</h4>
-          <p>{{_i}}Hides a collapsible element.{{/i}}</p>
+          <p>{{_i}}隐藏折叠元素。{{/i}}</p>
           <h3>{{_i}}Events事件{{/i}}</h3>
           <p>
-            {{_i}}Bootstrap's collapse class exposes a few events for hooking into collapse functionality.{{/i}}
+            {{_i}}Bootstrap的collapse类预留了一些事件，以便于在操作collapse时触发对应事件。{{/i}}
           </p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 150px;">{{_i}}Event{{/i}}</th>
-               <th>{{_i}}Description{{/i}}</th>
+               <th style="width: 150px;">{{_i}}事件名称{{/i}}</th>
+               <th>{{_i}}描述{{/i}}</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>{{_i}}show{{/i}}</td>
-               <td>{{_i}}This event fires immediately when the <code>show</code> instance method is called.{{/i}}</td>
+               <td>{{_i}}这个事件是当<code>show</code>方法被调用时就会触发。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}shown{{/i}}</td>
-               <td>{{_i}}This event is fired when a collapse element has been made visible to the user (will wait for css transitions to complete).{{/i}}</td>
+               <td>{{_i}}这个事件是当一个折叠元素被设置为对用户可见时就会触发。（在css动画完成后）。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}hide{{/i}}</td>
                <td>
-                {{_i}}This event is fired immediately when the <code>hide</code> method has been called.{{/i}}
+                {{_i}}这个事件是当<code>hide</code>方法被调用时就会触发。{{/i}}
                </td>
              </tr>
              <tr>
                <td>{{_i}}hidden{{/i}}</td>
-               <td>{{_i}}This event is fired when a collapse element has been hidden from the user (will wait for css transitions to complete).{{/i}}</td>
+               <td>{{_i}}这个事件是当一个折叠元素被设置为对用户不可见时就会触发。（在css动画完成后）。{{/i}}</td>
              </tr>
             </tbody>
           </table>
@@ -1177,13 +1177,13 @@ $('#myCollapsible').on('hidden', function () {
       </div>
       <div class="row">
         <div class="span3 columns">
-          <h3>{{_i}}About{{/i}}</h3>
-          <p>{{_i}}A generic plugin for cycling through elements. A merry-go-round.{{/i}}</p>
+          <h3>{{_i}}关于{{/i}}</h3>
+          <p>{{_i}}一个通用的插件来用循环显示元素，类似旋转木马的效果。{{/i}}</p>
           <a href="assets/js/bootstrap-carousel.js" target="_blank" class="btn">{{_i}}下载文件{{/i}}</a>
         </div>
         <div class="span9 columns">
-          <h2>{{_i}}Example carousel{{/i}}</h2>
-          <p>{{_i}}Watch the slideshow below.{{/i}}</p>
+          <h2>{{_i}}Carousel示例{{/i}}</h2>
+          <p>{{_i}}查看下面的幻灯片效果。{{/i}}</p>
           <div id="myCarousel" class="carousel slide">
             <div class="carousel-inner">
               <div class="item active">
@@ -1212,8 +1212,8 @@ $('#myCollapsible').on('hidden', function () {
             <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
           </div>
           <div class="alert alert-info">
-            <strong>{{_i}}Heads up!{{/i}}</strong>
-            {{_i}}When implementing this carousel, remove the images we have provided and replace them with your own.{{/i}}
+            <strong>{{_i}}注意！{{/i}}</strong>
+            {{_i}}当使用这个carousel，记得把我们提供的示例图片换成你自己的。{{/i}}
           </div>
           <hr>
           <h2>{{_i}}Using bootstrap-carousel.js{{/i}}</h2>
@@ -1223,10 +1223,10 @@ $('#myCollapsible').on('hidden', function () {
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">{{_i}}Name{{/i}}</th>
-               <th style="width: 50px;">{{_i}}type{{/i}}</th>
-               <th style="width: 50px;">{{_i}}default{{/i}}</th>
-               <th>{{_i}}description{{/i}}</th>
+               <th style="width: 100px;">{{_i}}名称{{/i}}</th>
+               <th style="width: 50px;">{{_i}}类型{{/i}}</th>
+               <th style="width: 50px;">{{_i}}默认值{{/i}}</th>
+               <th>{{_i}}描述{{/i}}</th>
              </tr>
             </thead>
             <tbody>
@@ -1234,18 +1234,18 @@ $('#myCollapsible').on('hidden', function () {
                <td>{{_i}}interval{{/i}}</td>
                <td>{{_i}}number{{/i}}</td>
                <td>5000</td>
-               <td>{{_i}}The amount of time to delay between automatically cycling an item.{{/i}}</td>
+               <td>{{_i}}设置自动循环显示切换的时间。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}pause{{/i}}</td>
                <td>{{_i}}string{{/i}}</td>
                <td>"hover"</td>
-               <td>{{_i}}Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.{{/i}}</td>
+               <td>{{_i}}当鼠标移动到图片上时暂定循环，移走时继续循环。{{/i}}</td>
              </tr>
             </tbody>
           </table>
           <h3>{{_i}}Markup结构{{/i}}</h3>
-          <p>{{_i}}Data attributes are used for the previous and next conrols. Check out the example markup below.{{/i}}</p>
+          <p>{{_i}}Data属性用来控制下一张、上一张。查看下面的示例结构。{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;div id="myCarousel" class="carousel"&gt;
   &lt;!-- {{_i}}Carousel items{{/i}} --&gt;
@@ -1261,39 +1261,39 @@ $('#myCollapsible').on('hidden', function () {
 </pre>
           <h3>{{_i}}Methods方法{{/i}}</h3>
           <h4>.carousel({{_i}}options{{/i}})</h4>
-          <p>{{_i}}Initializes the carousel with an optional options <code>object</code> and starts cycling through items.{{/i}}</p>
+          <p>{{_i}}初始化carousel，可选参数options <code>object</code>， 开始循环效果。{{/i}}</p>
 <pre class="prettyprint linenums">
 $('.carousel').carousel({
   interval: 2000
 })
 </pre>
           <h4>.carousel('cycle')</h4>
-          <p>{{_i}}Cycles through the carousel items from left to right.{{/i}}</p>
+          <p>{{_i}}从左至右循环carousel的所有项目。{{/i}}</p>
           <h4>.carousel('pause')</h4>
-          <p>{{_i}}Stops the carousel from cycling through items.{{/i}}</p>
+          <p>{{_i}}停止carousel效果。{{/i}}</p>
           <h4>.carousel(number)</h4>
-          <p>{{_i}}Cycles the carousel to a particular frame (0 based, similar to an array).{{/i}}</p>
+          <p>{{_i}}指定显示具体的某一项（从0开始，与数组类似）。{{/i}}</p>
           <h4>.carousel('prev')</h4>
-          <p>{{_i}}Cycles to the previous item.{{/i}}</p>
+          <p>{{_i}}显示上一项。{{/i}}</p>
           <h4>.carousel('next')</h4>
-          <p>{{_i}}Cycles to the next item.{{/i}}</p>
+          <p>{{_i}}显示下一项。{{/i}}</p>
           <h3>{{_i}}Events事件{{/i}}</h3>
-          <p>{{_i}}Bootstrap's carousel class exposes two events for hooking into carousel functionality.{{/i}}</p>
+          <p>{{_i}}Bootstrap的carousel类预留了两个事件，以便于在操作carousel时触发对应事件。{{/i}}</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 150px;">{{_i}}Event{{/i}}</th>
-               <th>{{_i}}Description{{/i}}</th>
+               <th style="width: 150px;">{{_i}}事件名称{{/i}}</th>
+               <th>{{_i}}描述{{/i}}</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>{{_i}}slide{{/i}}</td>
-               <td>{{_i}}This event fires immediately when the <code>slide</code> instance method is invoked.{{/i}}</td>
+               <td>{{_i}}这个事件是当<code>slide</code>方法被调用时就会触发。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}slid{{/i}}</td>
-               <td>{{_i}}This event is fired when the carousel has completed its slide transition.{{/i}}</td>
+               <td>{{_i}}这个事件是在carousel完成切换效果后触发。{{/i}}</td>
              </tr>
             </tbody>
           </table>
@@ -1307,32 +1307,32 @@ $('.carousel').carousel({
     ================================================== -->
     <section id="typeahead">
       <div class="page-header">
-        <h1>{{_i}}Typeahead{{/i}} <small>bootstrap-typeahead.js</small></h1>
+        <h1>{{_i}}Typeahead自动补全效果{{/i}} <small>bootstrap-typeahead.js</small></h1>
       </div>
       <div class="row">
         <div class="span3 columns">
-          <h3>{{_i}}About{{/i}}</h3>
-          <p>{{_i}}A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.{{/i}}</p>
+          <h3>{{_i}}关于{{/i}}</h3>
+          <p>{{_i}}这是一个可以使用任何表单元素快速创建优雅的自动补全效果的插件，插件使用很简单，也很容易扩展。{{/i}}</p>
           <a href="assets/js/bootstrap-typeahead.js" target="_blank" class="btn">{{_i}}下载文件{{/i}}</a>
         </div>
         <div class="span9 columns">
-          <h2>{{_i}}Example{{/i}}</h2>
-          <p>{{_i}}Start typing in the field below to show the typeahead results.{{/i}}</p>
+          <h2>{{_i}}示例{{/i}}</h2>
+          <p>{{_i}}在下面的输入框中输入文字来看typeahead的结果。{{/i}}</p>
           <div class="well">
             <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
           </div>
           <hr>
-          <h2>{{_i}}Using bootstrap-typeahead.js{{/i}}</h2>
-          <p>{{_i}}Call the typeahead via javascript:{{/i}}</p>
+          <h2>{{_i}}使用 bootstrap-typeahead.js{{/i}}</h2>
+          <p>{{_i}}通过javascript调用typeahead:{{/i}}</p>
           <pre class="prettyprint linenums">$('.typeahead').typeahead()</pre>
           <h3>{{_i}}Options{{/i}}</h3>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">{{_i}}Name{{/i}}</th>
-               <th style="width: 50px;">{{_i}}type{{/i}}</th>
-               <th style="width: 100px;">{{_i}}default{{/i}}</th>
-               <th>{{_i}}description{{/i}}</th>
+               <th style="width: 100px;">{{_i}}名称{{/i}}</th>
+               <th style="width: 50px;">{{_i}}类型{{/i}}</th>
+               <th style="width: 100px;">{{_i}}默认值{{/i}}</th>
+               <th>{{_i}}描述{{/i}}</th>
              </tr>
             </thead>
             <tbody>
@@ -1340,43 +1340,43 @@ $('.carousel').carousel({
                <td>{{_i}}source{{/i}}</td>
                <td>{{_i}}array{{/i}}</td>
                <td>[ ]</td>
-               <td>{{_i}}The data source to query against.{{/i}}</td>
+               <td>{{_i}}用来查询的数据源。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}items{{/i}}</td>
                <td>{{_i}}number{{/i}}</td>
                <td>8</td>
-               <td>{{_i}}The max number of items to display in the dropdown.{{/i}}</td>
+               <td>{{_i}}下拉菜单中最多显示多少项。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}matcher{{/i}}</td>
                <td>{{_i}}function{{/i}}</td>
                <td>{{_i}}case insensitive{{/i}}</td>
-               <td>{{_i}}The method used to determine if a query matches an item. Accepts a single argument, the <code>item</code> against which to test the query. Access the current query with <code>this.query</code>. Return a boolean <code>true</code> if query is a match.{{/i}}</td>
+               <td>{{_i}}这个方法是用来确认本次查询是否匹配某个项。只接受一个参数<code>item</code>，是用来检测本次查询的项。可以使用<code>this.query</code>可以获取当前查询。如果查询匹配的话，则返回<code>true</code>。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}sorter{{/i}}</td>
                <td>{{_i}}function{{/i}}</td>
                <td>{{_i}}exact match,<br> case sensitive,<br> case insensitive{{/i}}</td>
-               <td>{{_i}}Method used to sort autocomplete results. Accepts a single argument <code>items</code> and has the scope of the typeahead instance. Reference the current query with <code>this.query</code>.{{/i}}</td>
+               <td>{{_i}}这个方法是用来对自动补全的结果进行排序。只接受一个参数<code>items</code>，并且与typeahead的实例拥有同样的作用域。可以使用<code>this.query</code>可以获取当前查询。{{/i}}</td>
              </tr>
              <tr>
                <td>{{_i}}highlighter{{/i}}</td>
                <td>{{_i}}function{{/i}}</td>
                <td>{{_i}}highlights all default matches{{/i}}</td>
-               <td>{{_i}}Method used to highlight autocomplete results. Accepts a single argument <code>item</code> and has the scope of the typeahead instance. Should return html.{{/i}}</td>
+               <td>{{_i}}这个方法用来高亮显示自动补全的结果。只接受一个参数<code>items</code>，并且与typeahead的实例拥有同样的作用域。应该返回html。{{/i}}</td>
              </tr>
             </tbody>
           </table>
 
           <h3>{{_i}}Markup结构{{/i}}</h3>
-          <p>{{_i}}Add data attributes to register an element with typeahead functionality.{{/i}}</p>
+          <p>{{_i}}通过给元素添加data属性来实现typeahead效果。{{/i}}</p>
 <pre class="prettyprint linenums">
 &lt;input type="text" data-provide="typeahead"&gt;
 </pre>
           <h3>{{_i}}Methods方法{{/i}}</h3>
           <h4>.typeahead({{_i}}options{{/i}})</h4>
-          <p>{{_i}}Initializes an input with a typeahead.{{/i}}</p>
+          <p>{{_i}}给input元素初始化typeahead效果。{{/i}}</p>
         </div>
       </div>
     </section>
